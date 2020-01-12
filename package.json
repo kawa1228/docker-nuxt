@@ -1,8 +1,8 @@
 {
-  "name": "y",
+  "name": "docker-nuxt",
   "version": "1.0.0",
-  "description": "y",
-  "author": "y",
+  "description": "docker-nuxt",
+  "author": "sumi",
   "private": true,
   "scripts": {
     "dev": "nuxt",

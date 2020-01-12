@@ -1,6 +1,4 @@
-# y
-
-> y
+# docker-nuxt
 
 ## Build Setup
 
