@@ -1,7 +1,9 @@
-FROM node
+# nodeのイメージを元にoptionを追加していく
+FROM node:12.16
 
 # キャッシュを効かせるために先にコピー
 COPY package.json yarn.lock ./
+
 # RUNはdocker buildしたときに実行
 RUN yarn
 
@@ -15,6 +17,3 @@ ENV NUXT_HOST=0.0.0.0
 
 # コマンドはdocker runの時に実行
 CMD ["yarn", "start"]
-
-# portを紐づける
-# docker run --rm -it -p 3333:3333 sumi/docker-nuxt
