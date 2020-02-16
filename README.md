@@ -1,5 +1,21 @@
 # docker-nuxt
 
+## Build
+```
+$ docker build . -t kawa1228/docker-nuxt
+```
+## RUN
+コンテナとローカルのポートを紐付ける
+```
+$ docker run --rm -it -p 3333:3333 kawa1228/docker-nuxt
+```
+http://localhost:3333/
+
+## push container image to docker hub
+```
+$ docker push kawa1228/docker-nuxt
+```
+
 ## Build Setup
 
 ``` bash
